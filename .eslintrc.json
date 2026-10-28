@@ -1,18 +1,17 @@
 {
   "extends": [
     "airbnb",
-    "prettier",
-    "prettier/react",
-    "plugin:jsx-a11y/recommended"
+    "prettier"
   ],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2020,
+    "sourceType": "module",
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
       "impliedStrict": true,
       "classes": true
-    }
+    },
+    "requireConfigFile": false
   },
   "env": {
     "browser": true,
